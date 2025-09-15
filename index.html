@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адвокат Александра Серова — юридическая помощь в России</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="hero" id="home">
+        <nav class="nav">
+            <a class="logo" href="#home">Адвокат<br><span>Серов</span></a>
+            <button class="nav__toggle" aria-label="Меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav__links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#cases">Практика</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a class="nav__cta" href="#contact">Консультация</a></li>
+            </ul>
+        </nav>
+        <div class="hero__inner">
+            <div class="hero__content">
+                <p class="hero__tag">12 лет защищаем интересы бизнеса и частных лиц</p>
+                <h1>Надёжный адвокат в сфере корпоративного, налогового и уголовного права</h1>
+                <p class="hero__description">
+                    Персональный подход, глубокая экспертиза и полная конфиденциальность. Помогаем
+                    предпринимателям и гражданам в сложных юридических ситуациях по всей России.
+                </p>
+                <div class="hero__cta">
+                    <a class="btn btn--primary" href="#contact">Записаться на консультацию</a>
+                    <a class="btn btn--ghost" href="#cases">Посмотреть практику</a>
+                </div>
+                <dl class="hero__stats">
+                    <div>
+                        <dt>85%</dt>
+                        <dd>дел завершаем в пользу клиента</dd>
+                    </div>
+                    <div>
+                        <dt>12</dt>
+                        <dd>лет юридического стажа</dd>
+                    </div>
+                    <div>
+                        <dt>24/7</dt>
+                        <dd>на связи с клиентами</dd>
+                    </div>
+                </dl>
+            </div>
+            <aside class="hero__card">
+                <h2>Первичная консультация</h2>
+                <p>Оставьте контакты — подготовим анализ дела и план действий.</p>
+                <form class="hero__form" id="heroForm">
+                    <label>
+                        Имя
+                        <input type="text" name="name" placeholder="Мария" required />
+                    </label>
+                    <label>
+                        Телефон
+                        <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required />
+                    </label>
+                    <label>
+                        Комментарий
+                        <textarea name="comment" rows="3" placeholder="Кратко опишите ситуацию"></textarea>
+                    </label>
+                    <button type="submit" class="btn btn--primary">Получить консультацию</button>
+                    <p class="hero__policy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+                </form>
+            </aside>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--services" id="services">
+            <div class="section__header">
+                <p class="section__eyebrow">Комплексный подход</p>
+                <h2>Ключевые направления практики</h2>
+                <p>Сопровождаем клиента на каждом этапе: от правового анализа до полной реализации решений в суде и переговорах.</p>
+            </div>
+            <div class="services">
+                <article class="service-card">
+                    <h3>Корпоративное право</h3>
+                    <p>Создание и реструктуризация компаний, защита от рейдерства, сопровождение сделок M&A, корпоративные споры.</p>
+                    <ul>
+                        <li>Дью-дилидженс</li>
+                        <li>Договорная работа</li>
+                        <li>Судебные споры</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h3>Налоговые споры</h3>
+                    <p>Представительство в ФНС, обжалование актов и штрафов, защита при проверках, оптимизация налоговой нагрузки.</p>
+                    <ul>
+                        <li>Анализ рисков</li>
+                        <li>Сопровождение проверок</li>
+                        <li>Споры в арбитраже</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h3>Уголовное право</h3>
+                    <p>Защита по экономическим и должностным делам, формирование стратегии, сопровождение на следствии и в суде.</p>
+                    <ul>
+                        <li>Подготовка позиции</li>
+                        <li>Досудебное урегулирование</li>
+                        <li>Полное сопровождение</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h3>Международные проекты</h3>
+                    <p>Правовая поддержка внешнеэкономической деятельности, взаимодействие с иностранными партнёрами и банками.</p>
+                    <ul>
+                        <li>Санкционный комплаенс</li>
+                        <li>Контракты на экспорт/импорт</li>
+                        <li>Споры в иностранных юрисдикциях</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--highlight" id="advantages">
+            <div class="highlight">
+                <div class="highlight__content">
+                    <p class="section__eyebrow">Почему выбирают нас</p>
+                    <h2>Партнёр, которому можно доверять</h2>
+                    <ul class="highlight__list">
+                        <li>
+                            <span>Персональная команда экспертов</span>
+                            Подбираем профильных специалистов под каждое дело и формируем команду для быстрого результата.
+                        </li>
+                        <li>
+                            <span>Прозрачная финансовая модель</span>
+                            Закрепляем стоимость и этапы в договоре, предоставляем регулярную отчётность.
+                        </li>
+                        <li>
+                            <span>Цифровой кабинет клиента</span>
+                            Следите за статусом дела, загружайте документы и общайтесь с адвокатом в защищённом канале 24/7.
+                        </li>
+                    </ul>
+                </div>
+                <div class="highlight__media">
+                    <div class="highlight__badge">
+                        <span>Рейтинг</span>
+                        <strong>Pravo-300</strong>
+                        <span>2023</span>
+                    </div>
+                    <div class="highlight__image" role="img" aria-label="Современный офис юридической команды"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cases" id="cases">
+            <div class="section__header">
+                <p class="section__eyebrow">Избранные кейсы</p>
+                <h2>Дела, которые определили практику</h2>
+            </div>
+            <div class="cases">
+                <article class="case-card">
+                    <p class="case-card__label">Арбитраж</p>
+                    <h3>Отменили доначисления налога на 120 млн ₽</h3>
+                    <p>Собрали независимую экспертизу, доказали необоснованность претензий ФНС и защитили бизнес клиента.</p>
+                    <ul>
+                        <li>3 месяца работы</li>
+                        <li>Команда из 5 экспертов</li>
+                        <li>Суд первой инстанции</li>
+                    </ul>
+                </article>
+                <article class="case-card">
+                    <p class="case-card__label">Уголовное дело</p>
+                    <h3>Прекращено дело о злоупотреблении полномочиями</h3>
+                    <p>Выстроили стратегию защиты, опровергли показания свидетелей и добились прекращения дела на стадии следствия.</p>
+                    <ul>
+                        <li>6 недель</li>
+                        <li>Сняты все ограничения</li>
+                        <li>Полное восстановление репутации</li>
+                    </ul>
+                </article>
+                <article class="case-card">
+                    <p class="case-card__label">Комплаенс</p>
+                    <h3>Санкционный аудит экспортной компании</h3>
+                    <p>Провели анализ цепочек поставок, разработали политику и подготовили компанию к проверкам зарубежных партнёров.</p>
+                    <ul>
+                        <li>4 недели</li>
+                        <li>15 рекомендаций</li>
+                        <li>Реализованы изменения в ERP</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--testimonials" id="testimonials">
+            <div class="section__header">
+                <p class="section__eyebrow">Отзывы клиентов</p>
+                <h2>Результаты, которые говорят сами за себя</h2>
+            </div>
+            <div class="testimonials">
+                <article class="testimonial">
+                    <blockquote>
+                        «Александр детально проработал нашу ситуацию с налоговой. Благодаря его стратегии удалось сохранить бизнес и избежать многомиллионных штрафов.»
+                    </blockquote>
+                    <p class="testimonial__author">Ольга Петрова, финансовый директор</p>
+                </article>
+                <article class="testimonial">
+                    <blockquote>
+                        «Команда Серова — это когда адвокат становится частью бизнеса. Всегда на связи, чётко объясняют риски и предлагают несколько сценариев.»
+                    </blockquote>
+                    <p class="testimonial__author">Игорь Власов, CEO IT-компании</p>
+                </article>
+                <article class="testimonial">
+                    <blockquote>
+                        «Впечатлил цифровой кабинет: все документы, статус дела и чат с юристом — в одном месте. Сотрудничество полностью оправдало ожидания.»
+                    </blockquote>
+                    <p class="testimonial__author">Марина Кузнецова, предприниматель</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--cta">
+            <div class="cta">
+                <h2>Нужна защита или консультация?</h2>
+                <p>Опишите задачу, и мы предложим стратегию в течение рабочего дня. Работаем конфиденциально, в интересах клиента и в рамках законодательства РФ.</p>
+                <a class="btn btn--light" href="#contact">Обсудить задачу</a>
+            </div>
+        </section>
+
+        <section class="section section--contact" id="contact">
+            <div class="contact">
+                <div class="contact__info">
+                    <p class="section__eyebrow">Контакты</p>
+                    <h2>Офис в Москве, работаем по всей России</h2>
+                    <p>Приезжайте на встречу в современный офис рядом с м. Парк культуры или назначьте онлайн-консультацию.</p>
+                    <ul class="contact__list">
+                        <li>
+                            <span>Телефон</span>
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                        </li>
+                        <li>
+                            <span>Email</span>
+                            <a href="mailto:info@serov.legal">info@serov.legal</a>
+                        </li>
+                        <li>
+                            <span>Адрес</span>
+                            Москва, Остоженка, 12с2
+                        </li>
+                        <li>
+                            <span>Часы работы</span>
+                            Пн–Пт 9:00–20:00, Сб по записи
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__form">
+                    <form id="contactForm">
+                        <h3>Запросить консультацию</h3>
+                        <label>
+                            Имя
+                            <input type="text" name="name" placeholder="Ваше имя" required />
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
+                        </label>
+                        <label>
+                            Email
+                            <input type="email" name="email" placeholder="you@example.ru" />
+                        </label>
+                        <label>
+                            Вопрос
+                            <textarea name="message" rows="4" placeholder="Расскажите о задаче"></textarea>
+                        </label>
+                        <button type="submit" class="btn btn--primary">Отправить заявку</button>
+                        <p class="form__policy">Нажимая кнопку, вы даёте согласие на обработку персональных данных.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <a class="logo" href="#home">Адвокат<br><span>Серов</span></a>
+            <div class="footer__meta">
+                <p>Член Адвокатской палаты г. Москвы. Рег. № 77/12345.</p>
+                <p>© 2024 Александр Серов. Все права защищены.</p>
+            </div>
+            <ul class="footer__links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#cases">Практика</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <p>Используем электронную подпись и защищённые каналы связи для обмена документами.</p>
+            <div class="footer__socials">
+                <a href="#" aria-label="Telegram" class="social-icon">TG</a>
+                <a href="#" aria-label="WhatsApp" class="social-icon">WA</a>
+                <a href="#" aria-label="VK" class="social-icon">VK</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop" aria-hidden="true">
+        <span>Вверх</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
