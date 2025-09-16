@@ -19,6 +19,7 @@
                 <span></span>
             </button>
             <ul class="nav__links">
+                <li><a href="#about">Обо мне</a></li>
                 <li><a href="#services">Услуги</a></li>
                 <li><a href="#advantages">Преимущества</a></li>
                 <li><a href="#cases">Практика</a></li>
@@ -34,6 +35,15 @@
                     Персональный подход, глубокая экспертиза и полная конфиденциальность. Помогаем
                     предпринимателям и гражданам в сложных юридических ситуациях по всей России.
                 </p>
+                <p class="hero__note">
+                    Меня зовут Александр Серов. Я лично формирую стратегию защиты, участвую в переговорах и остаюсь
+                    на связи с клиентом на каждом этапе — от сбора доказательств до исполнения решений суда.
+                </p>
+                <ul class="hero__list">
+                    <li><span>Экс-руководитель юридического департамента промышленного холдинга</span></li>
+                    <li><span>Кандидат юридических наук, преподаватель корпоративного права</span></li>
+                    <li><span>Сертифицированный медиатор и переговорщик</span></li>
+                </ul>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="#contact">Записаться на консультацию</a>
                     <a class="btn btn--ghost" href="#cases">Посмотреть практику</a>
@@ -52,31 +62,107 @@
                         <dd>на связи с клиентами</dd>
                     </div>
                 </dl>
+                <div class="hero__signature">
+                    <strong>Александр Серов</strong>
+                    <span>Адвокат, управляющий партнёр бюро «Серов и партнёры»</span>
+                </div>
             </div>
-            <aside class="hero__card">
-                <h2>Первичная консультация</h2>
-                <p>Оставьте контакты — подготовим анализ дела и план действий.</p>
-                <form class="hero__form" id="heroForm">
-                    <label>
-                        Имя
-                        <input type="text" name="name" placeholder="Мария" required />
-                    </label>
-                    <label>
-                        Телефон
-                        <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required />
-                    </label>
-                    <label>
-                        Комментарий
-                        <textarea name="comment" rows="3" placeholder="Кратко опишите ситуацию"></textarea>
-                    </label>
-                    <button type="submit" class="btn btn--primary">Получить консультацию</button>
-                    <p class="hero__policy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
-                </form>
-            </aside>
+            <div class="hero__aside">
+                <figure class="hero__portrait">
+                    <img src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?auto=format&fit=crop&w=800&q=80" alt="Александр Серов, адвокат" />
+                    <figcaption>
+                        <strong>Александр Серов</strong>
+                        <span>Персональный адвокат по корпоративным и уголовным делам</span>
+                    </figcaption>
+                </figure>
+                <aside class="hero__card">
+                    <h2>Первичная консультация</h2>
+                    <p>Оставьте контакты — подготовим анализ дела и план действий.</p>
+                    <form class="hero__form" id="heroForm">
+                        <label>
+                            Имя
+                            <input type="text" name="name" placeholder="Мария" required />
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" placeholder="+7 (999) 123-45-67" required />
+                        </label>
+                        <label>
+                            Комментарий
+                            <textarea name="comment" rows="3" placeholder="Кратко опишите ситуацию"></textarea>
+                        </label>
+                        <button type="submit" class="btn btn--primary">Получить консультацию</button>
+                        <p class="hero__policy">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+                    </form>
+                </aside>
+            </div>
         </div>
     </header>
 
     <main>
+        <section class="section section--about" id="about">
+            <div class="about">
+                <div class="about__intro">
+                    <p class="section__eyebrow">Лично обо мне</p>
+                    <h2>Я — Александр Серов, адвокат и стратегический партнёр для бизнеса</h2>
+                    <p>
+                        Уже более десяти лет я защищаю интересы собственников, топ-менеджеров и частных лиц, помогая
+                        сохранять активы, репутацию и свободу. Для каждого дела формирую персональную стратегию,
+                        объединяя судебную практику, переговорные навыки и сильную команду профильных экспертов.
+                    </p>
+                    <ul class="about__highlights">
+                        <li>
+                            <span>Опыт в индустрии</span>
+                            7 лет руководил юридическим блоком крупного производственного холдинга.
+                        </li>
+                        <li>
+                            <span>Автор программ</span>
+                            Разработал корпоративные стандарты комплаенса для международных компаний.
+                        </li>
+                        <li>
+                            <span>Личное участие</span>
+                            Лично веду ключевые процессы и контролирую качество работы команды экспертов.
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__details">
+                    <article class="about-card">
+                        <h3>Образование и статус</h3>
+                        <ul class="about-card__list">
+                            <li>МГУ им. М.В. Ломоносова, юридический факультет, специализация «Корпоративное право».</li>
+                            <li>Член Адвокатской палаты г. Москвы, регистрационный номер 77/12345.</li>
+                            <li>Повышение квалификации: налоговое право, международный арбитраж, комплаенс.</li>
+                        </ul>
+                    </article>
+                    <article class="about-card">
+                        <h3>Практика в цифрах</h3>
+                        <dl class="about-card__stats">
+                            <div>
+                                <dt>120+</dt>
+                                <dd>успешных корпоративных споров и проектов за последние 5 лет</dd>
+                            </div>
+                            <div>
+                                <dt>40 млрд ₽</dt>
+                                <dd>сумма активов клиентов под юридическим сопровождением</dd>
+                            </div>
+                            <div>
+                                <dt>15</dt>
+                                <dd>регионов России, где представлял интересы доверителей</dd>
+                            </div>
+                        </dl>
+                    </article>
+                    <article class="about-card about-card--quote">
+                        <h3>Мой подход</h3>
+                        <p>Выстраиваю стратегию так, чтобы клиент видел прозрачный план действий и понимал каждое решение.</p>
+                        <blockquote class="about__quote">«Доверие формируется, когда адвокат берёт ответственность персонально. Поэтому ключевые переговоры и заседания я веду сам.»</blockquote>
+                        <ul class="about-card__list about-card__list--inline">
+                            <li>Работаю на русском и английском языках</li>
+                            <li>Привлекаю аудиторов, криминалистов и финансовых аналитиков</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
         <section class="section section--services" id="services">
             <div class="section__header">
                 <p class="section__eyebrow">Комплексный подход</p>
