@@ -869,7 +869,7 @@ p {
     gap: 16px;
 }
 
-.contact__list span {
+.contact__list li > span:first-child {
     display: block;
     font-size: 0.8rem;
     letter-spacing: 0.18em;
@@ -877,9 +877,14 @@ p {
     color: rgba(255, 255, 255, 0.5);
 }
 
-.contact__list a {
-    font-size: 1.2rem;
+.contact__value {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.1rem;
     font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    color: #ffffff;
 }
 
 .contact__form {
