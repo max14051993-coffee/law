@@ -101,18 +101,23 @@
 
     <main>
         <section class="section section--about" id="about">
-            <div class="about">
-                <div class="about__intro">
-                    <div class="about__profile">
-                        <div class="about__content">
-                            <p class="section__eyebrow">Лично обо мне</p>
-                            <h2>Я — Алексей Серов, независимый юрист по гражданским делам</h2>
-                            <p>
-                                С 2012 года представляю интересы граждан в судах Москвы и Московской области. Беру на себя
-                                семейные, жилищные, наследственные и другие гражданские споры, продумываю стратегию защиты
-                                и сопровождаю клиента на каждом этапе.
-                            </p>
-                            <ul class="about__highlights">
+            <details class="accordion accordion--wide" open>
+                <summary>
+                    <span class="accordion__eyebrow">Лично обо мне</span>
+                    <h2>Я — Алексей Серов, независимый юрист по гражданским делам</h2>
+                    <p class="accordion__hint">12 лет представляю интересы граждан в Москве и Московской области.</p>
+                </summary>
+                <div class="accordion__content">
+                    <div class="about">
+                        <div class="about__intro">
+                            <div class="about__profile">
+                                <div class="about__content">
+                                    <p class="about__description">
+                                        С 2012 года представляю интересы граждан в судах Москвы и Московской области. Беру на
+                                        себя семейные, жилищные, наследственные и другие гражданские споры, продумываю стратегию
+                                        защиты и сопровождаю клиента на каждом этапе.
+                                    </p>
+                                    <ul class="about__highlights">
                                 <li>
                                     <span>12 лет практики</span>
                                     Представляю клиентов в судах общей юрисдикции Москвы и Подмосковья, готовлю документы и выступаю в заседаниях лично.
@@ -174,14 +179,18 @@
                     </article>
                 </div>
             </div>
+                </div>
+            </details>
         </section>
         <section class="section section--services" id="services">
-            <div class="section__header">
-                <p class="section__eyebrow">Гражданская практика</p>
-                <h2>Ключевые направления работы</h2>
-                <p>Помогаю гражданам пройти весь путь: от первичной консультации и подготовки документов до представительства в суде и исполнении решения.</p>
-            </div>
-            <div class="services">
+            <details class="accordion">
+                <summary>
+                    <span class="accordion__eyebrow">Гражданская практика</span>
+                    <h2>Ключевые направления работы</h2>
+                    <p class="accordion__hint">Полный цикл сопровождения — от консультации до исполнения судебного решения.</p>
+                </summary>
+                <div class="accordion__content">
+                    <div class="services">
                 <article class="service-card">
                     <h3>Семейные дела</h3>
                     <p>Развод, раздел имущества, вопросы алиментов и порядка общения с детьми. Поддержка на каждом этапе.</p>
@@ -209,15 +218,22 @@
                         <li>Защита прав потребителей</li>
                     </ul>
                 </article>
-            </div>
+                    </div>
+                </div>
+            </details>
         </section>
 
         <section class="section section--highlight" id="advantages">
-            <div class="highlight">
-                <div class="highlight__content">
-                    <p class="section__eyebrow">Почему выбирают нас</p>
+            <details class="accordion">
+                <summary>
+                    <span class="accordion__eyebrow">Почему выбирают нас</span>
                     <h2>Партнёр, которому можно доверять</h2>
-                    <ul class="highlight__list">
+                    <p class="accordion__hint">Команда экспертов, прозрачные условия и цифровой кабинет клиента.</p>
+                </summary>
+                <div class="accordion__content">
+                    <div class="highlight">
+                        <div class="highlight__content">
+                            <ul class="highlight__list">
                         <li>
                             <span>Персональная команда экспертов</span>
                             Подбираем профильных специалистов под каждое дело и формируем команду для быстрого результата.
@@ -230,25 +246,30 @@
                             <span>Цифровой кабинет клиента</span>
                             Следите за статусом дела, загружайте документы и общайтесь с юристом в защищённом канале 24/7.
                         </li>
-                    </ul>
-                </div>
-                <div class="highlight__media">
-                    <div class="highlight__badge">
-                        <span>Рейтинг</span>
-                        <strong>Pravo-300</strong>
-                        <span>2023</span>
+                            </ul>
+                        </div>
+                        <div class="highlight__media">
+                            <div class="highlight__badge">
+                                <span>Рейтинг</span>
+                                <strong>Pravo-300</strong>
+                                <span>2023</span>
+                            </div>
+                            <div class="highlight__image" role="img" aria-label="Современный офис юридической команды"></div>
+                        </div>
                     </div>
-                    <div class="highlight__image" role="img" aria-label="Современный офис юридической команды"></div>
                 </div>
-            </div>
+            </details>
         </section>
 
         <section class="section section--cases" id="cases">
-            <div class="section__header">
-                <p class="section__eyebrow">Избранные кейсы</p>
-                <h2>Дела, которые определили практику</h2>
-            </div>
-            <div class="cases">
+            <details class="accordion">
+                <summary>
+                    <span class="accordion__eyebrow">Избранные кейсы</span>
+                    <h2>Дела, которые определили практику</h2>
+                    <p class="accordion__hint">Короткие истории с ключевыми результатами и сроками.</p>
+                </summary>
+                <div class="accordion__content">
+                    <div class="cases">
                 <article class="case-card">
                     <p class="case-card__label">Жилищный спор</p>
                     <h3>Отстояли право собственности на квартиру</h3>
@@ -279,15 +300,20 @@
                         <li>Доли наследников восстановлены</li>
                     </ul>
                 </article>
-            </div>
+                    </div>
+                </div>
+            </details>
         </section>
 
         <section class="section section--testimonials" id="testimonials">
-            <div class="section__header">
-                <p class="section__eyebrow">Отзывы клиентов</p>
-                <h2>Результаты, которые говорят сами за себя</h2>
-            </div>
-            <div class="testimonials">
+            <details class="accordion">
+                <summary>
+                    <span class="accordion__eyebrow">Отзывы клиентов</span>
+                    <h2>Результаты, которые говорят сами за себя</h2>
+                    <p class="accordion__hint">Три коротких истории клиентов о совместной работе.</p>
+                </summary>
+                <div class="accordion__content">
+                    <div class="testimonials">
                 <article class="testimonial">
                     <blockquote>
                         «Алексей помог пройти сложный развод: объяснил каждый шаг, подготовил документы и добился справедливого решения для детей.»
@@ -306,7 +332,9 @@
                     </blockquote>
                     <p class="testimonial__author">Марина Кузнецова, клиентка по защите прав потребителей</p>
                 </article>
-            </div>
+                    </div>
+                </div>
+            </details>
         </section>
 
         <section class="section section--cta">
@@ -318,11 +346,16 @@
         </section>
 
         <section class="section section--contact" id="contact">
-            <div class="contact">
-                <div class="contact__info">
-                    <p class="section__eyebrow">Контакты</p>
+            <details class="accordion accordion--wide">
+                <summary>
+                    <span class="accordion__eyebrow">Контакты</span>
                     <h2>Офис в Одинцово, работаю в Москве и Московской области</h2>
-                    <p>Назначьте встречу в офисе юридической фирмы в центре Одинцово или обсудим дело дистанционно, если вы находитесь в другом городе.</p>
+                    <p class="accordion__hint">Очные встречи и дистанционное сопровождение клиентов.</p>
+                </summary>
+                <div class="accordion__content">
+                    <div class="contact">
+                        <div class="contact__info">
+                            <p class="contact__lead">Назначьте встречу в офисе юридической фирмы в центре Одинцово или обсудим дело дистанционно, если вы находитесь в другом городе.</p>
                     <ul class="contact__list">
                         <li>
                             <span>Телефон</span>
@@ -364,8 +397,10 @@
                         <button type="submit" class="btn btn--primary">Отправить заявку</button>
                         <p class="form__policy">Нажимая кнопку, вы даёте согласие на обработку персональных данных.</p>
                     </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </details>
         </section>
     </main>
 
