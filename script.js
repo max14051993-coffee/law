@@ -1,6 +1,7 @@
 const navToggle = document.querySelector('.nav__toggle');
 const navLinks = document.querySelector('.nav__links');
 const backToTop = document.getElementById('backToTop');
+const accordions = Array.from(document.querySelectorAll('.accordion'));
 
 if (navToggle) {
     navToggle.addEventListener('click', () => {
@@ -19,6 +20,71 @@ navLinks?.querySelectorAll('a').forEach((link) => {
         }
     });
 });
+
+if (accordions.length) {
+    const closeOtherAccordions = (current) => {
+        accordions.forEach((accordion) => {
+            if (accordion !== current) {
+                accordion.removeAttribute('open');
+            }
+        });
+    };
+
+    const openAccordionFromHash = (hash) => {
+        if (!hash || hash === '#') {
+            return;
+        }
+
+        try {
+            const target = document.querySelector(hash);
+            if (!target) {
+                return;
+            }
+
+            const accordion = target.classList.contains('accordion')
+                ? target
+                : target.querySelector('.accordion');
+
+            if (!accordion) {
+                return;
+            }
+
+            accordion.setAttribute('open', '');
+            closeOtherAccordions(accordion);
+        } catch (error) {
+            // ignore invalid selectors
+        }
+    };
+
+    accordions.forEach((accordion) => {
+        accordion.addEventListener('toggle', () => {
+            if (accordion.open) {
+                closeOtherAccordions(accordion);
+            }
+        });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', () => {
+            const hash = link.getAttribute('href');
+            if (!hash || hash === '#') {
+                return;
+            }
+
+            requestAnimationFrame(() => {
+                openAccordionFromHash(hash);
+            });
+        });
+    });
+
+    window.addEventListener('hashchange', () => {
+        openAccordionFromHash(window.location.hash);
+    });
+
+    if (window.location.hash) {
+        openAccordionFromHash(window.location.hash);
+    }
+}
 
 function handleFormSubmit(form) {
     form.addEventListener('submit', (event) => {
