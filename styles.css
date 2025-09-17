@@ -13,6 +13,7 @@
     --radius-md: 20px;
     --radius-sm: 12px;
     --max-width: 1180px;
+    --scroll-offset: clamp(72px, 12vh, 160px);
     --font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
@@ -408,6 +409,11 @@ p {
 
 .section {
     padding: 36px 20px;
+}
+
+.hero,
+.section {
+    scroll-margin-top: var(--scroll-offset);
 }
 
 main {
