@@ -183,7 +183,7 @@ p {
 }
 
 .hero {
-    padding-bottom: 72px;
+    padding-bottom: 48px;
     background: linear-gradient(160deg, rgba(31, 111, 235, 0.32) 0%, rgba(11, 13, 23, 0.6) 40%, rgba(11, 13, 23, 0.95) 100%);
 }
 
@@ -407,7 +407,7 @@ p {
 }
 
 .section {
-    padding: 72px 24px;
+    padding: 56px 24px;
 }
 
 .section__header {
