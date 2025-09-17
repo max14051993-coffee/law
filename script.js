@@ -82,3 +82,82 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+const modalTriggers = document.querySelectorAll('[data-modal-target="privacyModal"]');
+const privacyModal = document.getElementById('privacyModal');
+let activeModal = null;
+let lastFocusedElement = null;
+
+const focusableSelector = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
+
+function openModal(modal) {
+    if (!modal) return;
+    lastFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    const dialog = modal.querySelector('.modal__dialog');
+    dialog?.focus();
+    activeModal = modal;
+}
+
+function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+    activeModal = null;
+    if (lastFocusedElement) {
+        lastFocusedElement.focus();
+        lastFocusedElement = null;
+    }
+}
+
+modalTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', (event) => {
+        event.preventDefault();
+        openModal(privacyModal);
+    });
+});
+
+privacyModal?.querySelectorAll('[data-close="modal"]').forEach((element) => {
+    element.addEventListener('click', () => {
+        closeModal(privacyModal);
+    });
+});
+
+privacyModal?.addEventListener('click', (event) => {
+    if (event.target === privacyModal) {
+        closeModal(privacyModal);
+    }
+});
+
+privacyModal?.addEventListener('keydown', (event) => {
+    if (!activeModal) return;
+    if (event.key === 'Tab') {
+        const focusable = Array.from(privacyModal.querySelectorAll(focusableSelector)).filter(
+            (el) => !el.hasAttribute('disabled') && !el.getAttribute('aria-hidden')
+        );
+        if (focusable.length === 0) {
+            event.preventDefault();
+            return;
+        }
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+        } else if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+        }
+    }
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && activeModal) {
+        closeModal(activeModal);
+    }
+});
